@@ -16,14 +16,14 @@ const Signup = () => {
   const [validName, setValidName] = useState(false);
 
   //state to store our password 
-  const [password, setPassword] = useState("");
+  const [password, setPassword, matchPassword] = useState("");
 //state to store the outcome of our regex test
   const [validPass, setValidPass] = useState(false);
 
 //state to store the employee's email
   const [email, setEmail] = useState("");
 //state to store the employee's roles
-  const [roles, setRoles] = useState("");
+  const [role, setRole] = useState("");
 
   let match;
 

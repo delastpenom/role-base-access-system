@@ -1,12 +1,13 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
-import AuthContext from "./Context/authProvider";
+import {AuthContext} from "authProvider";
 
 const Signin = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/home";
   const { auth, setAuth } = useContext(AuthContext);
+  
 //state the name of the employee gotten from the form
   const [name, setName] = useState("");
 //state to store password of the employee gotten from the form
